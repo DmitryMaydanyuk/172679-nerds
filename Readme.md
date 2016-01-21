@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Ann Shamova](https://htmlacademy.ru/profile/id172679).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/id8589)
 
 ---
 
