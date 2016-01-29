@@ -25,12 +25,28 @@
           <h2>Добро пожаловать в магазин готовых макетов</h2>
           </header>
           <main class="catalog-main-content">
-         <aside class="filter">
-             <section class="price">
-                 <h3>Стоимость:</h3>
-                 
-             </section>
-             <section class="grid">
+            <aside class="filter">
+                <section class="price">
+                <h3>Стоимость:</h3>
+                <input type="range" class="range-line">    
+                <div class="range-filter">
+                <div class="range-controls">
+                <div class="scale">
+                <div style="margin-left:50px; width:100px;" class="bar">
+                </div>
+                </div>
+                <div class="toggle min-toggle">
+                </div>
+                <div class="toggle max-toggle">
+                </div>
+                </div>
+                <div class="price-controls">
+                от <input class="min-price" type="text" value="5 000">
+                до <input class="max-price" type="text" value="15 000">
+               </div>
+               </div>
+                </section>
+                <section class="grid">
                  <h3>Сетка:</h3>
                  <input type="radio" checked="checked" name="raz"> 
                  <label for="raz">Адаптативная</label>
