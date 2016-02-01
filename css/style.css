@@ -1,0 +1,21 @@
+body {
+    font-family:"PT-sans", Arial, Verdana, sans-serif;
+    font-size: 16px;    
+    line-height: 12px;
+    font-weight: medium;
+    color: #283136;
+}
+h2 {
+    font-family:"PT-sans", Arial, Verdana, sans-serif;
+    font-size: 36px;    
+    line-height: 36px;
+    font-weight: medium;
+    color: #000000;
+}
+h3 {
+    font-family:"PT-sans", Arial, Verdana, sans-serif;
+    font-size: 16px;    
+    line-height: 22px;
+    font-weight: medium;
+    color: #000000;
+}
