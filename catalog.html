@@ -6,7 +6,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>   
-        <header class="menu-header">
+        <header class="menu-header cf">
+        <div class="conteiner cf"> 
         <div class="logo"> 
             <img src="img/logo.png" width="92px" height="37px" alt="Дизайн Студия<Nёrd's>">
         </div>    
@@ -23,13 +24,17 @@
                 Корзина
              </a>
           </div>
-          <h2>Добро пожаловать в магазин готовых макетов</h2>
+          <div class="welcome cf">
+          <h2>Добро пожаловать в магазин<br> готовых макетов</h2>
+          </div>  
+          </div>     
           </header>
           <main class="catalog-main-content">
-            <aside class="filter">
+            <div class="section-catalog"> 
+            <aside class="filter cf">
                 <section class="price">
                 <h3>Стоимость:</h3>
-                <input type="range" class="range-line">    
+<!--                <input type="range" class="range-line">    -->
                 <div class="range-filter">
                 <div class="range-controls">
                 <div class="scale">
@@ -47,43 +52,43 @@
                </div>
                </div>
                 </section>
-                <section class="grid">
+                <section class="grid cf">
                  <h3>Сетка:</h3>
-                 <input type="radio" checked="checked" name="raz"> 
+                 <input type="radio" id="raz" checked="checked" name=""> 
                  <label for="raz">Адаптативная</label>
-                 <input type="radio" name="raz">
+                 <input type="radio" id="raz" name="">
                  <label for="raz">Фиксированная</label>
-                 <input type="radio" name="raz">
+                 <input type="radio" id="raz" name="">
                  <label for="raz">Резиновая</label>
              </section>
              <section class="more-function">
                  <h3>Особенности:</h3>
-                 <input type="checkbox" checked="checked" name="chebox">
+                 <input type="checkbox" id="chebox" checked="checked" name="">
                  <label for="chebox">Слайдер</label>
-                 <input type="checkbox" name="chebox">
+                 <input type="checkbox" id="chebox" name="">
                  <label for="chebox">Блок преимуществ</label>
-                 <input type="checkbox" checked="checked" name="chebox">
+                 <input type="checkbox" id="chebox" checked="checked" name="chebox">
                  <label for="chebox">Новости</label>
-                 <input type="checkbox" name="chebox">
+                 <input type="checkbox" id="chebox" name="">
                  <label for="chebox">Галерея</label>
-                 <input type="checkbox" name="chebox">
+                 <input type="checkbox" id="chebox" name="">
                  <label for="chebox">Корзина</label>
              </section>
              <button type="submit" class="show">Показать</button>
          </aside>
          <article class="content-catalog">
-             <section class="sort">
+             <section class="sort-main">
                  <h4>Сортировать:</h4>
                  <a href=""><p class="by-price">по цене</p></a>
                  <a href=""><p class="by-type">по типу</p></a>
                  <a href=""><p class="by-functional">по функционалу</p></a>
                  <div class="btn-ascending btn-descending">
-                 <button type="submit" class="btn-descending">по убыванию</button>
-                 <button type="submit" class="btn-ascending">по возрастанию</button>    
+                 <button type="submit" class="btn-descending"> </button>
+                 <button type="submit" class="btn-ascending"> </button>    
                  </div>     
              </section>
              <article class="catalog-items">
-                 <section class="catalog-item">
+                 <section class="catalog-item aviator">
                   <div class="roof">
                       <i class="hole"></i>
                       <i class="hole"></i>
@@ -98,7 +103,7 @@
                         <button type="submit" class="buy"></button>
                      </div>
                  </section>
-                 <section class="catalog-item">
+                 <section class="catalog-item sunset">
                      <div class="roof">
                       <i class="hole"></i>
                       <i class="hole"></i>
@@ -109,11 +114,11 @@
                      </div>
                      <div class="item-hover">
                         <h3></h3>
-                        <p>Интернет-магазин с личным кабинетом</p>
-                        <button type="submit" class="buy">10000 Р.</button>
+<!--                        <p>Интернет-магазин с личным кабинетом</p>-->
+<!--                        <button type="submit" class="buy">10000 Р.</button>-->
                      </div>
                  </section>
-                 <section class="catalog-item">
+                 <section class="catalog-item forte">
                      <div class="roof">
                       <i class="hole"></i>
                       <i class="hole"></i>
@@ -128,7 +133,7 @@
                         <button type="submit" class="buy"></button>
                      </div>
                  </section>
-                 <section class="catalog-item">
+                 <section class="catalog-item m-o-thai">
                      <div class="roof">
                       <i class="hole"></i>
                       <i class="hole"></i>
@@ -143,7 +148,7 @@
                         <button type="submit" class="buy"></button>
                      </div>
                  </section>
-                 <section class="catalog-item">
+                 <section class="catalog-item avenue">
                      <div class="roof">
                       <i class="hole"></i>
                       <i class="hole"></i>
@@ -158,7 +163,7 @@
                         <button type="submit" class="buy"></button>
                      </div>
                  </section>
-                 <section class="catalog-item">
+                 <section class="catalog-item dovetail">
                      <div class="roof">
                       <i class="hole"></i>
                       <i class="hole"></i>
@@ -180,8 +185,10 @@
                  <a href="#" class="btn-pg">3</a>
                  <a href="#" class="btn-pg">Следующая</a>
              </section>
-             </article>
+             </article>   
+              </div>        
         <article class="map">
+<!--            <img src="img/map.jpg" width="1200px" height="416px" href="#" alt="map">-->
           <div class="conteiner">
          <div class="feat-back">
              <h1>nerds design studio</h1>
@@ -192,7 +199,7 @@
         </div>
         </article>
        </main>
-      <footer class="footer">
+      <footer class="footer cf">
          <div class="conteiner"> 
             <div class="social">
                 <a class="social-btn social-btn-vkont" href="#">ВКонтакте</a>
@@ -201,31 +208,10 @@
             </div>
             </div> 
             <div class="info">
-                <h3>Давайте дружить это выгодно!</h3>
+                <h2>Давайте дружить это выгодно!</h2>
                 <p>Скидка 10% для друзей из социальных сетей.</p> 
          </div>
       </footer>
-            <foother class="main-foother">
-         <div class="conteiner">
-             <section clas="contact">
-                  Барбершоп "Бородинский"<br>
-                   Адрес: Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                   <a href="#">Как нас найти?</a><br>
-                   Телефон: +7 (812) 666-02-66
-             </section>
-          <section class="social">
-              <p>Давай дружить!</p>
-               <a class="social-btn social-btn-vkont" href="#">ВКонтакте</a>
-                <a class="social-btn social-btn-facebook" href="#">Фейсбук</a>
-                <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
-                 
-             </section>
-             <section class="copyright">
-                 <p>Разработано:</p>
-                 <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-             </section>
-        </div>
-      </foother>
   </body>
 </html>
 

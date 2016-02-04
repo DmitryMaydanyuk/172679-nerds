@@ -1,3 +1,18 @@
+.cf {
+    content: "";
+    display: table;
+    clear: both;
+}
+ul {
+    list-style: none;
+}
+p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+.otl {
+    outline: 2px solid red;
+}
 body {
     font-family:"PT-sans", Arial, Verdana, sans-serif;
     font-size: 16px;    
@@ -14,8 +29,228 @@ h2 {
 }
 h3 {
     font-family:"PT-sans", Arial, Verdana, sans-serif;
-    font-size: 16px;    
-    line-height: 22px;
+    font-size: 18px;    
+    line-height: 30px;
     font-weight: medium;
     color: #000000;
+}
+.menu-header {
+    width: 100%;
+    background-color: #eeeeee;
+}
+.conteiner {
+    width: 900px;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+    width: 150px;
+    padding-left: 10px;
+}
+.top-navigation {
+    float: left;
+    width: 365px;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+.basket {
+    float: right;
+   width: 80px;/* оставить место под корзину */
+    margin-top: 20px;
+    display: inline-block;
+}
+a {
+ text-decoration: none; 
+}
+
+.top-navigation ul  {
+  list-style: none;
+  
+}
+.top-navigation ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+.top-navigation li:first-child {
+    margin-left: 0;
+}
+.top-navigation li:fourth-child{
+    margin-right: 0;
+}
+.header-slider {
+   width: 900px;
+    margin: 0 auto; 
+    margin-top: 60px;
+}
+
+.slider-info {
+    float: left;
+    width: 390px;
+    margin-right: 160px;
+    padding-left: 10px;
+}
+.img-gadgets {
+    float: right;
+    width: 340px;
+}
+.features {
+   width: 900px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.web {
+    float: left;
+    width: 240px;
+    margin-right: 80px;
+    padding-left: 10px;
+}
+.mobile {
+   float: left;
+    width: 240px;
+    margin-right: 80px;
+}
+.present {
+   float: left;
+    width: 240px;
+}
+.about-us {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.about-us-left {
+    float: left;
+    width: 620px;
+    padding-left: 10px;
+}
+.about-us-right {
+    float: right;
+    width: 230px;
+}
+.partners {
+    width: 900px;
+    margin: 0 auto;
+    min-height: 165px;
+    margin-top: 60px;
+}
+.partners-items-1 {
+    float: left;
+    width: 300px;
+    margin-right: ;
+    padding-left: 10px;
+    margin-top: 60px;
+}
+.partners-items-2 {
+    float: left;
+    width: 300px;
+    margin-top: 50px;
+}
+.partners-items-3 {
+    float: left;
+    width: 250px;
+    margin-top: 40px;
+}
+
+.welcome {
+    width: 100%;
+    margin: 0 auto; 
+    background-color: #eeeeee;
+    min-height: 230px;
+    text-align: center; 
+}
+.welcome h2 {
+    margin-top: 60px;
+}
+.catalog-main-content {
+    width: 100%;
+    margin: 0 auto;
+}
+.section-catalog {
+    width: 900px;
+    margin: 0 auto;
+}
+.filter {
+   width: 250px;
+    display: block;
+    float: left;
+}
+.content-catalog {
+    width: 580px;
+    float: right;
+}
+
+}
+.sort-main {
+    display: inline-block;
+    width: 580px;
+}
+.sort-main h4 a p {
+    margin-left: 30px;
+    float: left;
+    font-size: 12px;
+}
+.sort-main h4 {
+    font-size: 12px;
+}
+.btn-ascending, .btn-descending {
+    float: right;
+}
+catalog-items {
+    display: block;
+}
+.aviator {
+    float: left;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+.sunset {
+     float: right;
+    margin-left: 0;
+    margin-right: 20px;
+}
+.forte {
+     float: left;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+.m-o-thai {
+     float: right;
+    margin-left: 0;
+    margin-right: 20px;
+}
+.avenue {
+    float: left;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+.dovetail {
+      float: right;
+    margin-left: 0;
+    margin-right: 20px;
+}
+.pagenator {
+    clear: both;
+} 
+.map {
+    width: 100%;
+    background-image: url("../img/map.jpg");
+    min-height: 415px;
+    clear: both;
+}
+.footer {
+    width: 900px;
+    margin: 0 auto;
+    clear: both;
+}
+.social {
+    float: left;
+    width: 300px;
+}
+.info {
+     float: right;
+    width: 550px;
+}
+.social a {
+    display: inline-block;
+    margin-left: 20px;
 }
