@@ -178,6 +178,9 @@ a {
     width: 580px;
     float: right;
 }
+.grid {
+    vertical-align: middle;
+}
 
 }
 .sort-main {
