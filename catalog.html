@@ -3,91 +3,89 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>  
+    <link rel="stylesheet" href="ccs/normalize.css">  
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>   
         <header class="menu-header cf">
         <div class="conteiner cf"> 
         <div class="logo"> 
-            <img src="img/logo.png" width="92px" height="37px" alt="Дизайн Студия<Nёrd's>">
+            <img src="img/logo-header.png" width="139px" height="56px" alt="Дизайн Студия<Nёrd's>">
         </div>    
-          <nav class="top-navigation">
-              <ul>
-                  <li><a href="#">Студия</a></li>
-                  <li><a href="#">Клиенты</a></li>
-                  <li><a href="#">Магазин</a></li>
-                  <li><a href="#">Контакты</a></li>
-              </ul>
-          </nav>
+        <nav class="top-navigation">
+            <ul>
+                <li><a href="#">Студия</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
           <div class="user-block">
              <a class="basket" href="#">
                 Корзина
              </a>
           </div>
-          <div class="welcome cf">
-          <h2>Добро пожаловать в магазин<br> готовых макетов</h2>
+          <div class="welcome">
+            <h2>Добро пожаловать в магазин готовых макетов</h2>
           </div>  
           </div>     
           </header>
           <main class="catalog-main-content">
             <div class="conteiner cf"> 
-            <aside class="filter">
+            <form class="filter">
                 <section class="price">
-                <h3>Стоимость:</h3>
-<!--                <input type="range" class="range-line">    -->
-                <div class="range-filter">
-                <div class="range-controls">
+                    <h3>Стоимость:</h3>
+         <div class="range-filter">
+            <div class="range-controls">
                 <div class="scale">
-                <div style="margin-left:50px; width:100px;" class="bar">
+                    <div class="bar" style="margin-left: 20%; width: 30%">  </div>
                 </div>
-                </div>
-                <div class="toggle min-toggle">
-                </div>
-                <div class="toggle max-toggle">
-                </div>
-                </div>
-                <div class="price-controls">
-                от <input class="min-price" type="text" value="5 000">
-                до <input class="max-price" type="text" value="15 000">
-               </div>
-               </div>
-                </section>
-                <section class="grid cf">
-                 <h3>Сетка:</h3>
-                 <input type="radio" id="raz" checked="checked" name=""> 
-                 <label for="raz">Адаптативная</label>
-                 <input type="radio" id="raz" name="">
-                 <label for="raz">Фиксированная</label>
-                 <input type="radio" id="raz" name="">
-                 <label for="raz">Резиновая</label>
-             </section>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            </div>
+          </div>
+               </section>
+                    <section class="grid cf">
+                        <h3>Сетка:</h3>
+                        <input type="radio" id="grid-radio" checked="checked" name="r1"> 
+                        <label for="grid-radio">Адаптативная</label>
+                        <input type="radio" id="grid-radio" name="r2">
+                        <label for="grid-radio">Фиксированная</label>
+                        <input type="radio" id="grid-radio" name="r3">
+                        <label for="grid-radio">Резиновая</label>
+                    </section>
              <section class="more-function">
-                 <h3>Особенности:</h3>
-                 <input type="checkbox" id="chebox" checked="checked" name="">
-                 <label for="chebox">Слайдер</label>
-                 <input type="checkbox" id="chebox" name="">
-                 <label for="chebox">Блок преимуществ</label>
-                 <input type="checkbox" id="chebox" checked="checked" name="chebox">
-                 <label for="chebox">Новости</label>
-                 <input type="checkbox" id="chebox" name="">
-                 <label for="chebox">Галерея</label>
-                 <input type="checkbox" id="chebox" name="">
-                 <label for="chebox">Корзина</label>
+                        <h3>Особенности:</h3>
+                        <input type="checkbox" id="mr-checkbox" checked="checked" name="a1">
+                        <label for="mr-checkbox">Слайдер</label>
+                        <input type="checkbox" id="mr-checkbox" name="a2">
+                        <label for="mr-checkbox">Блок преимуществ</label>
+                        <input type="checkbox" id="mr-checkbox" checked="checked" name="a3">
+                        <label for="mr-checkbox">Новости</label>
+                        <input type="checkbox" id="mr-checkbox" name="a4">
+                        <label for="mr-checkbox">Галерея</label>
+                        <input type="checkbox" id="mr-checkbox" name="a5">
+                        <label for="mr-checkbox">Корзина</label>
              </section>
-             <button type="submit" class="show">Показать</button>
-         </aside>
+                        <button type="submit" class="show">Показать</button>
+         </form>
          <article class="content-catalog">
              <section class="sort-main">
-                 <h4>Сортировать:</h4>
-                 <a href=""><p class="by-price">по цене</p></a>
-                 <a href=""><p class="by-type">по типу</p></a>
-                 <a href=""><p class="by-functional">по функционалу</p></a>
+                 <h3>Сортировать:</h3>
+                 <a href="#"><p class="by-price">по цене</p></a>
+                 <a href="#"><p class="by-type">по типу</p></a>
+                 <a href="#"><p class="by-functional">по функционалу</p></a>
                  <div class="btn-ascending btn-descending">
                  <a class="btn-descending" href="#"></a>
                  <a class="btn-ascending" href="#"></a>    
                  </div>     
              </section>
-             <article class="catalog-items">
+             <article class="catalog-items cf">
                  <section class="catalog-item aviator">
                   <div class="roof">
                       <i class="hole"></i>
@@ -98,9 +96,9 @@
                         <img src="img/aviator.jpg" width="240" height="240" alt="AVIATOR">
                      </div>
                      <div class="item-hover">
-                        <h3></h3>
-                        <p></p>
-                        <button type="submit" class="buy"></button>
+                       <h3>AVIATOR</h3>
+                        <p>Интернет-магазин с личным кабинетом</p>
+                        <button type="submit" class="buy">8000 Р.</button>
                      </div>
                  </section>
                  <section class="catalog-item sunset">
@@ -113,9 +111,9 @@
                         <img src="img/sunset.jpg" width="240" height="240" alt="SUNSET">
                      </div>
                      <div class="item-hover">
-                        <h3></h3>
-<!--                        <p>Интернет-магазин с личным кабинетом</p>-->
-<!--                        <button type="submit" class="buy">10000 Р.</button>-->
+                    <h3>SUNSET</h3>
+                        <p>Интернет-магазин с личным кабинетом</p>
+                        <button type="submit" class="buy">10000 Р.</button>
                      </div>
                  </section>
                  <section class="catalog-item forte">
@@ -128,9 +126,9 @@
                         <img src="img/forte.jpg" width="240" height="240" alt="FORTE">
                      </div>
                      <div class="item-hover">
-                        <h3></h3>
-                        <p></p>
-                        <button type="submit" class="buy"></button>
+                        <h3>FORTE</h3>
+                        <p>Интернет-магазин с личным кабинетом</p>
+                        <button type="submit" class="buy">12000 Р.</button>
                      </div>
                  </section>
                  <section class="catalog-item m-o-thai">
@@ -143,9 +141,9 @@
                         <img src="img/modern organic thai.jpg" width="240" height="240" alt="MODERN ORGANIC THAI">
                      </div>
                      <div class="item-hover">
-                        <h3></h3>
-                        <p></p>
-                        <button type="submit" class="buy"></button>
+                        <h3>MARQUEE</h3>
+                        <p>Интернет-магазин с личным кабинетом</p>
+                        <button type="submit" class="buy">10000 Р.</button>
                      </div>
                  </section>
                  <section class="catalog-item avenue">
@@ -158,9 +156,9 @@
                         <img src="img/avenue.jpg" width="240" height="240" alt="AVENUE">
                      </div>
                      <div class="item-hover">
-                        <h3></h3>
-                        <p></p>
-                        <button type="submit" class="buy"></button>
+                        <h3>AVENUE</h3>
+                        <p>Интернет-магазин с личным кабинетом</p>
+                        <button type="submit" class="buy">12000 Р.</button>
                      </div>
                  </section>
                  <section class="catalog-item dovetail">
@@ -173,13 +171,13 @@
                         <img src="img/dovetail.jpg" width="240" height="240" alt="DOVETAIL">
                      </div>
                      <div class="item-hover">
-                        <h3></h3>
-                        <p></p>
-                        <button type="submit" class="buy"></button>
+                        <h3>DOVETAIL</h3>
+                        <p>Интернет-магазин с личным кабинетом</p>
+                        <button type="submit" class="buy">10000 Р.</button>
                      </div>
                  </section>
              </article>
-             <section class="pagenator">
+             <section class="pagenator cf">
                  <a href="#" class="btn-pg btn-pg-activ">1</a>
                  <a href="#" class="btn-pg">2</a>
                  <a href="#" class="btn-pg">3</a>
@@ -189,7 +187,6 @@
         </div>         
        </main>
        <article class="map">
-<!--            <img src="img/map.jpg" width="1200px" height="416px" href="#" alt="map">-->
           <div class="conteiner">
          <div class="feat-back">
              <h1>nerds design studio</h1>
@@ -199,17 +196,17 @@
         </div>
         </div>
         </article>
-      <footer class="footer cf">
-         <div class="conteiner"> 
+      <footer class="footer">
+         <div class="conteiner cf"> 
             <div class="social">
                 <a class="social-btn social-btn-vkont" href="#">ВКонтакте</a>
                 <a class="social-btn social-btn-facebook" href="#">Фейсбук</a>
                 <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
             </div>
-            </div> 
-            <div class="info">
+             <div class="info">
                 <h2>Давайте дружить это выгодно!</h2>
                 <p>Скидка 10% для друзей из социальных сетей.</p> 
+         </div> 
          </div>
       </footer>
   </body>

@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link rel="stylesheet" href="ccs/normalize.css">  
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="menu-header">
         <div class="conteiner cf">    
             <div class="logo"> 
-                <img src="img/logo.png" width="92px" height="37px" alt="Дизайн Студия<Nёrd's>">
+                <img src="img/logo-header.png" width="139px" height="56px" alt="Дизайн Студия<Nёrd's>">
             </div>    
             <nav class="top-navigation">
                 <ul class="cf">
@@ -24,37 +25,40 @@
                 Корзина
                 </a>
             </div>
-            <div class="header-slider">
-                    <input type="radio" id="btn-1" name="info-slide1" checked>
-                    <input type="radio" id="btn-2" name="info-slide2">
-                    <input type="radio" id="btn-3" name="info-slide3">
-            <div class="slider-controls">
-                    <label for="btn-1"></label>
-                    <label for="btn-2"></label>
-                    <label for="btn-3"></label>
-            </div>               
-                <section class="info-slide slide-1">
-                        <img class="img-gadgets" src="img/gadgets.jpg" width="336px" height="228px" alt="gadgets">            
-              <div class="slider-info">             
-              <h2>Долго, дорого,<br> скурпулезно.</h2>
-              <p>
-              Математический выверенный дизайн<br> для вашего сайта или мобильного приложения.
-              </p>
-              <button class="btn know-more" href="#">Узнать больше</button>
-              </div> 
-                 <div>  
-                 </section>
-                    <section class="info-slide slide-2">
-                        <img src="">
-                    </section>
-                    <section class="info-slide slide-3">
-                        <img src="" width="" height="" alt="">
-                    </section>                      
-                </div> 
-            </div>  
-        </div> 
-        </div>        
-    </header>
+              <div class="header-slider">
+        <input type="radio" id="btn-1" name="info-slide" checked>
+        <input type="radio" id="btn-2" name="info-slide">
+        <input type="radio" id="btn-3" name="info-slide">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title"><h2>Долго, дорого,<br> скурпулезно.</h2></div>
+              <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title"><h2>Любите ли вы математику,<br> как любим ее мы?</h2></div>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title"><h2>Только наркотики,<br> только хардкор!</h2></div>
+              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header> 
     <main class="main-content">
           <div class="conteiner">
           <article class="features cf">
@@ -100,7 +104,8 @@
              <section class="about-us-right"> 
               <img src="img/logo3.png" width="187px" height="75px" class="content-logo" alt="Nёrd's SINCE 2004">
              <div class="how-we-work">
-             <h3>Как мы работаем</h3>
+             <span class="sinse">SINSE 2004</span> 
+             <h3>Как мы работаем</h3>    
              <ul>
                  <li>С самоотдачей 146%</li>
                  <li>Соблюдая сроки на 100%</li>
@@ -111,7 +116,7 @@
          </article>
          <article class="partners cf">        
          <section class="partners-items-1">
-           <a></a><img src="img/gluhanko.jpg" width="198px" height="37px" href="#" alt="GLUKHANKO"></a>
+           <a><img src="img/gluhanko.jpg" width="198px" height="37px" href="#" alt="GLUKHANKO"></a>
          </section> 
           <section class="partners-items-2">
            <a><img src="img/htmlac.jpg" width="199px" height="68px" href="#" alt="HTMLAcademy"></a>
@@ -119,31 +124,30 @@
         <section class="partners-items-3">
            <a><img src="img/borod.jpg" width="209px" height="86px" href="#" alt="Barbershop BORODINSKI"></a>
         </section> 
-        </article>     
-        <article class="map">
-<!--            <img src="img/map.jpg" width="1200px" height="416px" href="#" alt="map">-->
+        </article> 
+       </main>
+    <article class="map">
           <div class="conteiner">
          <div class="feat-back">
-             <h1>nerds design studio</h1>
+             <h1>nёrds design studio</h1>
              <p class="adress">191186, Санкт-петербург,<br> ул. Б. Конюшенная, д. 18/8</p>
              <p class="phone">+7(812)275-75-75</p>
              <button class="send-us">Напишите нам</button>
         </div>
         </div>
         </article>
-       </main>
-      <footer class="footer cf">
-         <div class="conteiner"> 
+      <footer class="footer">
+         <div class="conteiner cf"> 
             <div class="social">
                 <a class="social-btn social-btn-vkont" href="#">ВКонтакте</a>
                 <a class="social-btn social-btn-facebook" href="#">Фейсбук</a>
                 <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
             </div>
-            </div> 
-            <div class="info">
+                <div class="info">
                 <h2>Давайте дружить это выгодно!</h2>
                 <p>Скидка 10% для друзей из социальных сетей.</p> 
          </div>
+         </div> 
       </footer>
   </body>
 </html>
