@@ -1,215 +1,290 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Нёрдс</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="ccs/normalize.css">  
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>   
-   <header class="menu-header">
-    <div class="conteiner"> 
-     <div class="logo"> 
+
+<head>
+  <meta charset="utf-8">
+  <title>Nerds</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href="ccs/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="menu-header">
+    <div class="conteiner">
+      <!--Навигация: Логотип - он же ссыылка на главную страницу-->
+      <div class="logo">
         <a href="index.html"><img src="img/logo-header.png" width="139px" height="56px" alt="Дизайн Студия<Nёrd's>"></a>
-     </div>    
+      </div>
+      <!--Навигация: Главное меню-->
       <nav class="top-navigation">
         <ul>
           <li><a href="index.html">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li><a class="active-item" href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
+      <!--Навигация: Корзина-->
       <div class="user-block">
         <a class="basket" href="#"><span class="icon-basket"></span> Корзина</a>
       </div>
-
-     </div>
-     
-      <div class="welcome">
-         <h2>Добро пожаловать в магазин<br> готовых макетов</h2>
-      </div>  
-
-    </header>
-    <main class="catalog-main-content">
-      <div class="conteiner cf"> 
-        <form class="filter" action="" method="">
+    </div>
+    <!-- Заголовок каталоговой страницы -->
+    <div class="welcome">
+      <h2>Добро пожаловать в магазин<br> готовых макетов</h2>
+    </div>
+  </header>
+  <main class="catalog-main-content">
+    <div class="conteiner cf">
+      <!-- Фильтр: сортировка продукции -->
+      <aside class="filter">
+        <form action="" method="">
+          <!--Ползунок стоимости-->
           <section class="price">
             <h3>Стоимость:</h3>
             <div class="range-filter">
-             <div class="range-controls">
-              <div class="scale">
-                <div class="bar" style="margin-left: 20%; width: 30%">  </div>
-              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 30%"> </div>
+                </div>
                 <div class="toggle toggle-min"></div>
                 <div class="toggle toggle-max"></div>
-             </div>
-            <div class="price-controls">
-             <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-             <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от
+                  <input name="min-price" type="text" value="0">
+                </label>
+                <label class="max-price">до
+                  <input name="max-price" type="text" value="15000">
+                </label>
+              </div>
             </div>
-           </div>
-          </section>  
-            <section class="grid cf">
-              <h3>Сетка:</h3>
-                <input type="radio" id="grid-radio" checked="checked" name="r1"> 
-                <label for="grid-radio">Адаптативная</label>
-                <input type="radio" id="grid-radio" name="r2">
-                <label for="grid-radio">Фиксированная</label>
-                <input type="radio" id="grid-radio" name="r3">
-                <label for="grid-radio">Резиновая</label>
-            </section>
-            <section class="more-function">
-              <h3>Особенности:</h3>
-              <input type="checkbox" id="mr-checkbox"  name="a1">
-              <label for="mr-checkbox">Слайдер</label>
-              <input type="checkbox" id="mr-checkbox" name="a2">
-              <label for="mr-checkbox">Блок преимуществ</label>
-              <input type="checkbox" id="mr-checkbox" name="a3">
-              <label for="mr-checkbox">Новости</label>
-              <input type="checkbox" id="mr-checkbox" name="a4">
-              <label for="mr-checkbox">Галерея</label>
-              <input type="checkbox" id="mr-checkbox" name="a5">
-              <label for="mr-checkbox">Корзина</label>
-             </section> 
-             <button type="submit" class="btn-show">Показать</button>
+          </section>
+          <!--Переключатель: Radio-->
+          <section class="grid">
+            <h3>Сетка:</h3>
+            <input type="radio" id="adaptive" name="grid" checked>
+            <label for="adaptive">Адаптативная</label>
+            <input type="radio" id="fixed" name="grid" disabled>
+            <label for="fixed">Фиксированная</label>
+            <input type="radio" id="flex" name="grid">
+            <label for="flex">Резиновая</label>
+          </section>
+          <!--Переключатель: Checkbox-->
+          <section class="more-function">
+            <h3>Особенности:</h3>
+            <input type="checkbox" id="slider" name="slider" checked>
+            <label for="slider">Слайдер</label>
+            <input type="checkbox" id="advantages" name="advantages">
+            <label for="advantages">Блок преимуществ</label>
+            <input type="checkbox" id="news" name="news" checked>
+            <label for="news">Новости</label>
+            <input type="checkbox" id="gallery" name="gallery" disabled>
+            <label for="gallery">Галерея</label>
+            <input type="checkbox" id="basket" name="basket">
+            <label for="basket">Корзина</label>
+          </section>
+          <button type="submit" class="btn-show">Показать</button>
         </form>
-        <article class="content-catalog">
-         <section class="sort-main">
-           <h3>Сортировать:</h3>
-            <a href="#"><p class="by-price">по цене</p></a>
-            <a href="#"><p class="by-type">по типу</p></a>
-            <a href="#"><p class="by-functional">по функционалу</p></a>
-            <div class="btn-sort">
+      </aside>
+      <!--Сетка: Каталог товаров-->
+      <article class="content-catalog">
+        <!--Сортировка: кнопки для сортировки поиска продукции-->
+        <section class="sort-main">
+          <h3>Сортировать:</h3>
+          <a href="#">
+            <p class="by-price">по цене</p>
+          </a>
+          <a href="#">
+            <p class="by-type">по типу</p>
+          </a>
+          <a href="#">
+            <p class="by-functional">по функционалу</p>
+          </a>
+          <div class="btn-sort">
             <a class="btn-descending" href="#"><span class="icon-down-dir"></span></a>
-            <a class="btn-ascending" href="#"><span class="icon-up-dir"></span></a>    
-            </div>     
-         </section>
-             <article class="catalog-items cf">
-                 <section class="catalog-item aviator">
-                  <div class="roof">
-                      <i class="hole"></i>
-                      <i class="hole"></i>
-                      <i class="hole"></i>
-                  </div>
-                     <div class="item-picture">
-                        <img src="img/aviator.jpg" width="240" height="240" alt="AVIATOR">
-                     </div>
-                     <div class="item-hover">
-                       <h3>AVIATOR</h3>
-                        <p>Интернет-магазин с личным кабинетом</p>
-                        <button type="submit" class="buy">8000 Р.</button>
-                     </div>
-                 </section>
-                 <section class="catalog-item sunset">
-                     <div class="roof">
-                      <i class="hole"></i>
-                      <i class="hole"></i>
-                      <i class="hole"></i>
-                  </div>
-                     <div class="item-picture">
-                        <img src="img/sunset.jpg" width="240" height="240" alt="SUNSET">
-                     </div>
-                     <div class="item-hover">
-                    <h3>SUNSET</h3>
-                        <p>Интернет-магазин с личным кабинетом</p>
-                        <button type="submit" class="buy">10000 Р.</button>
-                     </div>
-                 </section>
-                 <section class="catalog-item forte">
-                     <div class="roof">
-                      <i class="hole"></i>
-                      <i class="hole"></i>
-                      <i class="hole"></i>
-                  </div>
-                     <div class="item-picture">
-                        <img src="img/forte.jpg" width="240" height="240" alt="FORTE">
-                     </div>
-                     <div class="item-hover">
-                        <h3>FORTE</h3>
-                        <p>Интернет-магазин с личным кабинетом</p>
-                        <button type="submit" class="buy">12000 Р.</button>
-                     </div>
-                 </section>
-                 <section class="catalog-item m-o-thai">
-                     <div class="roof">
-                      <i class="hole"></i>
-                      <i class="hole"></i>
-                      <i class="hole"></i>
-                  </div>
-                     <div class="item-picture">
-                        <img src="img/modern organic thai.jpg" width="240" height="240" alt="MODERN ORGANIC THAI">
-                     </div>
-                     <div class="item-hover">
-                        <h3>MARQUEE</h3>
-                        <p>Интернет-магазин с личным кабинетом</p>
-                        <button type="submit" class="buy">10000 Р.</button>
-                     </div>
-                 </section>
-                 <section class="catalog-item avenue">
-                     <div class="roof">
-                      <i class="hole"></i>
-                      <i class="hole"></i>
-                      <i class="hole"></i>
-                  </div>
-                     <div class="item-picture">
-                        <img src="img/avenue.jpg" width="240" height="240" alt="AVENUE">
-                     </div>
-                     <div class="item-hover">
-                        <h3>AVENUE</h3>
-                        <p>Интернет-магазин с личным кабинетом</p>
-                        <button type="submit" class="buy">12000 Р.</button>
-                     </div>
-                 </section>
-                 <section class="catalog-item dovetail">
-                     <div class="roof">
-                      <i class="hole"></i>
-                      <i class="hole"></i>
-                      <i class="hole"></i>
-                  </div>
-                     <div class="item-picture">
-                        <img src="img/dovetail.jpg" width="240" height="240" alt="DOVETAIL">
-                     </div>
-                     <div class="item-hover">
-                        <h3>DOVETAIL</h3>
-                        <p>Интернет-магазин с личным кабинетом</p>
-                        <button type="submit" class="buy">10000 Р.</button>
-                     </div>
-                 </section>
-             </article>
-             <section class="pagenator cf">
-                 <a href="#" class="btn-pg btn-pg-active">1</a>
-                 <a href="#" class="btn-pg">2</a>
-                 <a href="#" class="btn-pg">3</a>
-                 <a href="#" class="btn-pg">Следующая</a>
-             </section>
-       </article>          
-      </div>         
-    </main>
-    <article class="map">
-      <div class="conteiner">
-       <div class="feat-back">
-        <h1>nerds design studio</h1>
-         <p class="adress">191186, Санкт-петербург,<br> ул. Б. Конюшенная, д. 18/8</p>
-         <p class="phone">+7(812)275-75-75</p>
-         <button class="send-us">Напишите нам</button>
-      </div>
-     </div>
-    </article>
-    <footer class="footer">
-      <div class="conteiner cf"> 
-        <div class="social">
-                <a class="social-btn" href="#"><span class="icon-vk"></span>ВКонтакте</a>
-                <a class="social-btn" href="#"><span class="icon-facebook"></span>Фейсбук</a>
-                <a class="social-btn" href="#"><span class="icon-instagramm"></span>Инстаграм</a>
-        </div>
-        <div class="info">
-          <p class="add-friends">Давайте дружить это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p> 
-        </div> 
-      </div>
-  </footer>
-  </body>
-</html>
+            <a class="btn-ascending" href="#"><span class="icon-up-dir"></span></a>
+          </div>
+        </section>
+        <article class="catalog-items cf">
+          <section class="catalog-item aviator">
+            <div class="roof">
+              <i class="hole"></i>
+              <i class="hole"></i>
+              <i class="hole"></i>
+            </div>
+            <div class="item-picture">
+              <img src="img/aviator.jpg" width="240" height="240" alt="AVIATOR">
+            </div>
+            <div class="item-hover">
+              <h3>AVIATOR</h3>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <button type="submit" class="buy">8000 Р.</button>
+            </div>
+          </section>
+          <section class="catalog-item sunset">
+            <div class="roof">
+              <i class="hole"></i>
+              <i class="hole"></i>
+              <i class="hole"></i>
+            </div>
+            <div class="item-picture">
+              <img src="img/sunset.jpg" width="240" height="240" alt="SUNSET">
+            </div>
+            <div class="item-hover">
+              <h3>SUNSET</h3>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <button type="submit" class="buy">10000 Р.</button>
+            </div>
+          </section>
+          <section class="catalog-item forte">
+            <div class="roof">
+              <i class="hole"></i>
+              <i class="hole"></i>
+              <i class="hole"></i>
+            </div>
+            <div class="item-picture">
+              <img src="img/forte.jpg" width="240" height="240" alt="FORTE">
+            </div>
+            <div class="item-hover">
+              <h3>FORTE</h3>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <button type="submit" class="buy">12000 Р.</button>
+            </div>
+          </section>
+          <section class="catalog-item m-o-thai">
+            <div class="roof">
+              <i class="hole"></i>
+              <i class="hole"></i>
+              <i class="hole"></i>
+            </div>
+            <div class="item-picture">
+              <img src="img/modern organic thai.jpg" width="240" height="240" alt="MODERN ORGANIC THAI">
+            </div>
+            <div class="item-hover">
+              <h3>MARQUEE</h3>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <button type="submit" class="buy">10000 Р.</button>
+            </div>
+          </section>
+          <section class="catalog-item avenue">
+            <div class="roof">
+              <i class="hole"></i>
+              <i class="hole"></i>
+              <i class="hole"></i>
+            </div>
+            <div class="item-picture">
+              <img src="img/avenue.jpg" width="240" height="240" alt="AVENUE">
+            </div>
+            <div class="item-hover">
+              <h3>AVENUE</h3>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <button type="submit" class="buy">12000 Р.</button>
+            </div>
+          </section>
+          <section class="catalog-item dovetail">
+            <div class="roof">
+              <i class="hole"></i>
+              <i class="hole"></i>
+              <i class="hole"></i>
+            </div>
+            <div class="item-picture">
+              <img src="img/dovetail.jpg" width="240" height="240" alt="DOVETAIL">
+            </div>
+            <div class="item-hover">
+              <h3>DOVETAIL</h3>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <button type="submit" class="buy">10000 Р.</button>
+            </div>
+          </section>
+        </article>
+        <!--Кнопки переключения страниц магазина-->
+        <section class="pagenator cf">
+          <a href="#" class="btn-pg btn-pg-active btn">1</a>
+          <a href="#" class="btn-pg btn">2</a>
+          <a href="#" class="btn-pg btn">3</a>
+          <a href="#" class="btn-pg btn">Следующая</a>
+        </section>
+      </article>
+    </div>
+  </main>
+  <!--КАРТА-->
+  <article class="map">
 
+    <!-- Кнопка обратной связи  -->
+    <div class="conteiner">
+      <div class="feat-back">
+        <h1>nerds design studio</h1>
+        <p class="adress">191186, Санкт-петербург,
+          <br> ул. Б. Конюшенная, д. 18/8</p>
+        <p class="phone">+7(812)275-75-75</p>
+        <a class="send-us btn" href="#">Напишите нам</a>
+      </div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59894241237!2d30.320894615717364!3d59.93879686904838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455705166891" width="100%" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </article>
+  <!--Подвал: Социальные сети    -->
+  <footer class="footer">
+    <div class="conteiner cf">
+      <div class="social">
+        <a class="social-btn" href="https://vk.com/"><span class="icon-vk"></span>ВКонтакте</a>
+        <a class="social-btn" href="https://www.facebook.com/"><span class="icon-facebook"></span>Фейсбук</a>
+        <a class="social-btn" href="https://www.instagram.com/"><span class="icon-instagramm"></span>Инстаграм</a>
+      </div>
+      <div class="info">
+        <p class="add-friends">Давайте дружить это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+  <!--Всплывающая форма, для обратной связи-->
+  <section class="block-form">
+    <form class="feed-back-form cf" action="" method="post">
+      <label for="name">Ваше имя:</label>
+      <label for="email">Ваше e-mail:</label>
+      <input type="text" id="name" name="name" value="" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
+      <input type="email" id="email" name="email" value="" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+      <label for="message">Текст письма:</label>
+      <textarea class="message-field" id="message" name="message" rows="5">
+      </textarea>
+      <button class="btn form-btn" type="submit" value="Отправить">Отправить</button>
+      <a class="cancel-btn"></a>
+    </form>
+  </section>
+  <!--JS для формы обратной связи    -->
+  <script>
+    var link = document.querySelector(".send-us");
+    var popup = document.querySelector(".block-form");
+    var close = popup.querySelector(".cancel-btn");
+    var name = popup.querySelector("#name");
+    var form = popup.querySelector("form");
+
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      popup.classList.add("block-form-show");
+      name.focus();
+    });
+
+    close.addEventListener("click", function (event) {
+      event.preventDefault();
+      popup.classList.remove("block-form-show");
+
+    });
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+    });
+    window.addEventListener("keydown", function (event) {
+      if (event.keyCode === 27) {
+        if (popup.classList.contains("block-form-show")) {
+          popup.classList.remove("block-form-show");
+        }
+      }
+    });
+  </script>
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

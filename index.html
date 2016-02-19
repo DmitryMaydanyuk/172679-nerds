@@ -1,155 +1,230 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Нёрдс</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="ccs/normalize.css">  
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Nerds</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href="ccs/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
   <header class="menu-header">
-   <div class="conteiner cf">    
-    <div class="logo"> 
-      <a href="index.html"><img src="img/logo-header.png" width="139px" height="56px" alt="Дизайн Студия<Nёrd's>"></a>
-    </div>    
-    <nav class="top-navigation">
-      <ul>
-        <li><a href="index.html">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
+    <div class="conteiner cf">
+      <!--Навигация: Логотип - он же ссыылка на главную страницу-->
+      <div class="logo">
+        <a href="index.html"><img src="img/logo-header.png" width="139px" height="56px" alt="Дизайн Студия<Nёrd's>"></a>
+      </div>
+      <!--Навигация: Главное меню-->
+      <nav class="top-navigation">
+        <ul>
+          <li><a href="index.html">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <!--Навигация: Корзина-->
       <div class="user-block">
         <a class="basket" href="#"><span class="icon-basket"></span>
                 Корзина
         </a>
       </div>
-    </div> 
-    <div class="header-slider">
-     <input type="radio" id="btn-1" name="info-slide" checked>
-     <input type="radio" id="btn-2" name="info-slide">
-     <input type="radio" id="btn-3" name="info-slide">
-    <div class="slider-controls">
-      <label for="btn-1"></label>
-      <label for="btn-2"></label>
-      <label for="btn-3"></label>
     </div>
+    <!--Слайд: Переключатель-->
+    <div class="header-slider">
+      <input type="radio" id="btn-1" name="info-slide" checked>
+      <input type="radio" id="btn-2" name="info-slide">
+      <input type="radio" id="btn-3" name="info-slide">
+      <div class="slider-controls">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
+      </div>
       <div class="slides">
-       <div class="slide">
-        <div class="slide-text">
-          <div class="slide-title"><h2>Долго, дорого,<br> скурпулезно.</h2></div>
-            <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+        <div class="slide">
+          <div class="slide-text">
+            <div class="slide-title">
+              <h2>Долго, дорого,<br> скрупулезно.</h2></div>
+            <p>Математически выверенный дизайн
+              <br>для вашего сайта или мобильного приложения.</p>
             <a class="btn" href="#">Узнать больше</a>
+          </div>
         </div>
-       </div>
-       <div class="slide">
-        <div class="slide-text">
-          <div class="slide-title"><h2>Любите ли вы математику,<br> как любим ее мы?</h2></div>
-          <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать.</p>
-          <a class="btn" href="#">Узнать больше</a>
+        <div class="slide">
+          <div class="slide-text">
+            <div class="slide-title">
+              <h2>Любите ли вы математику,<br> как любим ее мы?</h2></div>
+            <p>Нашим дизайнерам мы удаляем нейроны, ответственные
+              <br>за креатив, чтобы дать им возможность все просчитать.</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
         </div>
-       </div>
-       <div class="slide">
-       <div class="slide-text">
-          <div class="slide-title"><h2>Только наркотики,<br> только хардкор!</h2></div>
-           <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
-           <a class="btn" href="#">Узнать больше</a>
+        <div class="slide">
+          <div class="slide-text">
+            <div class="slide-title">
+              <h2>Только наркотики,<br> только хардкор!</h2></div>
+            <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
         </div>
-       </div>
       </div>
     </div>
-  </header> 
-   <main class="main-content">
-      <div class="conteiner">
-       <article class="features cf">
-         <section class="features-box">
-            <div class="web">     
-              <img src="img/imgred.jpg"  width="240px" height="124px" alt="imgred">
-              <h3>Веб-сайты</h3>
-              <p>Мир никогла не будет прежним<br>после того как увидит ваш сайт!</p>
-              <button class="btn shop-now1">Заказать</button>
-            </div>    
-           </section>
-          <div class="mobile"> 
-           <section class="features-box">
-            <img src="img/imggreen.jpg" width="240px" height="124px" alt="imggreen">
-            <h3>Приложение</h3>
-            <p>Покорите топ-10 приложений<br>в AppStore и Google Play</p>
-            <button class="btn shop-now2">Заказать</button>
-           </section>  
-          </div>
+  </header>
+  <main class="main-content">
+    <div class="conteiner">
+      <!--Features: Веб-сайты - Приложение - Презентации-->
+      <article class="features cf">
+        <!--Features: Веб-сайты-->
         <section class="features-box">
-          <div class="present">      
-            <img src="img/imgyellow.jpg" width="240px" height="124px" alt="imgyellow">
+          <div class="web">
+            <img src="img/imgred.jpg" width="240px" height="124px" alt="web-site">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогла не будет прежним
+              <br>после того как увидит ваш сайт!</p>
+            <button class="btn shop-now1">Заказать</button>
+          </div>
+        </section>
+        <!--Features: Приложение-->
+        <div class="mobile">
+          <section class="features-box">
+            <img src="img/imggreen.jpg" width="240px" height="124px" alt="mobile-app">
+            <h3>Приложение</h3>
+            <p>Покорите топ-10 приложений
+              <br>в AppStore и Google Play</p>
+            <button class="btn shop-now2">Заказать</button>
+          </section>
+        </div>
+        <!--Features: Презентации-->
+        <section class="features-box">
+          <div class="present">
+            <img src="img/imgyellow.jpg" width="240px" height="124px" alt="present">
             <h3>Презентация</h3>
-            <p>Выдаже не подазреваете,<br>насколько вы изумительны!</p>
+            <p>Выдаже не подазреваете,
+              <br>насколько вы изумительны!</p>
             <button class="btn shop-now3">Заказать</button>
           </div>
         </section>
-       </article>
-      </div>
-      <article class="about-us cf"> 
-         <section class="about-us-left">     
-          <h2>Мы маленькая, но гордая<br>дизайн-студия из Краснодара.</h2>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический<br> расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-          <div class="orders">
-            <h3>Выполняем заказы на разработку:</h3>
-            <ul>
-              <li>Веб-сайтов любой сложности.</li>
-              <li>Мобильных приложений для iOs и Android</li>
-              <li>Слайд шоу и видео для презентаций</li>
-            </ul>
-          </div>
-        </section>
-        <section class="about-us-right"> 
-          <img src="img/logo-year.png" width="240px" height="119px" class="content-logo" alt="Nёrd's SINCE 2004">
-         <div class="how-we-work"> 
-           <h3>Как мы работаем:</h3>    
-            <ul>
-              <li>С самоотдачей 146%</li>
-              <li>Соблюдая сроки на 100%</li>
-              <li>По предоплате 50%</li>
-            </ul>
-         </div>
-        </section>
       </article>
-      <article class="partners cf">        
-        <section class="partners-items-1">
-           <a><img src="img/gluhanko.jpg" width="198px" height="37px" href="#" alt="GLUKHANKO"></a>
-        </section> 
-       <section class="partners-items-2">
-        <a><img src="img/htmlac.jpg" width="199px" height="68px" href="#" alt="HTMLAcademy"></a>
-       </section> 
-       <section class="partners-items-3">
-        <a><img src="img/borod.jpg" width="209px" height="86px" href="#" alt="Barbershop BORODINSKI"></a>
-       </section> 
-      </article> 
-    </main>
-    <article class="map">
-       <div class="conteiner">
-        <div class="feat-back">
-          <h1>nёrds design studio</h1>
-          <p class="adress">191186, Санкт-петербург,<br> ул. Б. Конюшенная, д. 18/8</p>
-          <p class="phone">+7(812)275-75-75</p>
-          <button class="send-us">Напишите нам</button>
-       </div>
-      </div>
-     </article>
-   <footer class="footer">
-       <div class="conteiner cf"> 
-        <div class="social">
-          <a class="social-btn" href="https://vk.com/"><span class="icon-vk"></span>ВКонтакте</a>
-          <a class="social-btn" href="https://www.facebook.com/"><span class="icon-facebook"></span>Фейсбук</a>
-          <a class="social-btn" href="https://www.instagram.com/"><span class="icon-instagramm"></span>Инстаграм</a>
+    </div>
+    <article class="about-us cf">
+      <!--Промо: левый блок-->
+      <section class="about-us-left">
+        <h2>Мы маленькая, но гордая<br>дизайн-студия из Краснодара.</h2>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический
+          <br> расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+        <div class="orders">
+          <h3>Выполняем заказы на разработку:</h3>
+          <ul>
+            <li>Веб-сайтов любой сложности.</li>
+            <li>Мобильных приложений для iOs и Android</li>
+            <li>Слайд шоу и видео для презентаций</li>
+          </ul>
         </div>
-        <div class="info">
-          <p class="add-friends">Давайте дружить это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p> 
-       </div> 
+      </section>
+      <!--Промо: правый блок-->
+      <section class="about-us-right">
+        <img src="img/logo-year.png" width="240px" height="119px" class="content-logo" alt="Nёrd's SINCE 2004">
+        <div class="how-we-work">
+          <h3>Как мы работаем:</h3>
+          <ul>
+            <li>С самоотдачей 146%</li>
+            <li>Соблюдая сроки на 100%</li>
+            <li>По предоплате 50%</li>
+          </ul>
+        </div>
+      </section>
+    </article>
+    <!--Партнеры: блок партнерских ссылок     -->
+    <article class="partners cf">
+      <section class="partners-items-1">
+        <a href="#"><img src="img/gluhanko.jpg" width="198px" height="37px" alt="GLUKHANKO"></a>
+      </section>
+      <section class="partners-items-2">
+        <a href="https://htmlacademy.ru"><img src="img/htmlac.jpg" width="199px" height="68px" alt="HTMLAcademy"></a>
+      </section>
+      <section class="partners-items-3">
+        <a href="#"><img src="img/borod.jpg" width="209px" height="86px" alt="Barbershop BORODINSKI"></a>
+      </section>
+    </article>
+  </main>
+  <!--КАРТА-->
+  <article class="map">
+    <!-- Кнопка обратной связи  -->
+    <div class="conteiner">
+      <div class="feat-back">
+        <h1>nerds design studio</h1>
+        <p class="adress">191186, Санкт-петербург,
+          <br> ул. Б. Конюшенная, д. 18/8</p>
+        <p class="phone">+7(812)275-75-75</p>
+        <a class="send-us" href="#">Напишите нам</a>
       </div>
-   </footer>
-  </body>
-</html>
+    </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59894241237!2d30.320894615717364!3d59.93879686904838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455705166891" width="100%" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </article>
+  <!--Подвал: Социальные сети    -->
+  <footer class="footer">
+    <div class="conteiner cf">
+      <div class="social">
+        <a class="social-btn" href="https://vk.com/"><span class="icon-vk"></span>ВКонтакте</a>
+        <a class="social-btn" href="https://www.facebook.com/"><span class="icon-facebook"></span>Фейсбук</a>
+        <a class="social-btn" href="https://www.instagram.com/"><span class="icon-instagramm"></span>Инстаграм</a>
+      </div>
+      <div class="info">
+        <p class="add-friends">Давайте дружить это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+  <!--Всплывающая форма, для обратной связи-->
+  <section class="block-form">
+    <form class="feed-back-form cf" action="" method="post">
+      <label for="name">Ваше имя:</label>
+      <label for="email">Ваше e-mail:</label>
+      <input type="text" id="name" name="name" value="" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
+      <input type="email" id="email" name="email" value="" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+      <label for="message">Текст письма:</label>
+      <textarea class="message-field" id="message" name="message" rows="5">
+      </textarea>
+      <button class="btn form-btn" type="submit" value="Отправить">Отправить</button>
+      <a class="cancel-btn"></a>
+    </form>
+  </section>
+  <!--JS для формы обратной связи    -->
+  <script>
+    var link = document.querySelector(".send-us");
+    var popup = document.querySelector(".block-form");
+    var close = popup.querySelector(".cancel-btn");
+    var name = popup.querySelector("#name");
+    var form = popup.querySelector("form");
 
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      popup.classList.add("block-form-show");
+      name.focus();
+    });
+
+    close.addEventListener("click", function (event) {
+      event.preventDefault();
+      popup.classList.remove("block-form-show");
+      popup.classList.remove("modal-error");
+    });
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+    });
+
+    window.addEventListener("keydown", function (event) {
+      if (event.keyCode === 27) {
+        if (popup.classList.contains("block-form-show")) {
+          popup.classList.remove("block-form-show");
+        }
+      }
+    });
+  </script>
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
