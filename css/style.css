@@ -156,7 +156,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 
@@ -254,13 +254,13 @@ h3 {
 
 .welcome h2 {
   text-align: center;
-  padding: 10px 150px 80px 150px;
+  padding: 30px 150px 90px 150px;
   margin-left: 35px;
   margin-bottom: 68px;
   font-family: 'Roboto', Arial, Verdana, sans-serif;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 100;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: medium;
 }
 
 
@@ -416,8 +416,8 @@ h3 {
 .features {
   width: 900px;
   margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .features p {
