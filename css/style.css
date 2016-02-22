@@ -74,7 +74,6 @@
   content: "\2611";
 }
 
-
 .icon-instagramm::before {/* "\1f4f7" */
   content: "📷";
 }
@@ -111,27 +110,27 @@ img {
 
 body {
   position: relative;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: medium;
   color: #283136;
   margin: 0;
 }
 
 h2 {
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   font-size: 36px;
   line-height: 36px;
-  font-weight: 400;
+  font-weight: medium;
   color: #000000;
 }
 
 h3 {
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: medium;
   color: #000000;
 }
 
@@ -152,7 +151,7 @@ h3 {
   background-color: #eeeeee;
 }
 
-.menu-header .conteiner {
+.menu-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,7 +161,7 @@ h3 {
 
 /*центровщик*/
 
-.conteiner {
+.container {
   width: 900px;
   margin: 0 auto;
 }
@@ -192,9 +191,9 @@ h3 {
   padding-bottom: 5px;
   color: #000000;
   font-size: 14px;
-  line-height: 18px;
-  font-weight: 500;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  line-height: 30px;
+  font-weight: medium;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   text-transform: uppercase;
 }
 
@@ -236,8 +235,8 @@ h3 {
   color: #000000;
   font-size: 14px;
   line-height: 30px;
-  font-weight: 500;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-weight: medium;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   text-transform: uppercase;
 }
 
@@ -257,7 +256,7 @@ h3 {
   padding: 30px 150px 90px 150px;
   margin-left: 35px;
   margin-bottom: 68px;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   font-size: 40px;
   line-height: 40px;
   font-weight: medium;
@@ -322,15 +321,20 @@ h3 {
 }
 
 .slide-title h2 {
-  font-weight: 500;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   font-size: 36px;
+  line-height: 36px;
+  font-weight: medium;
+  color: #000;
   margin: 0;
   padding: 35px 0 20px;
 }
 
 .slide p {
-  font-weight: 500;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-size: 16px;
   line-height: 22px;
+  font-weight: medium;
   color: #283136;
   padding-bottom: 30px;
 }
@@ -340,7 +344,7 @@ h3 {
   width: 220px;
 /*  margin-top: 55px;*/
   padding: 12px 10px;
-  font-weight: 300;
+  font-weight: medium;
   font-size: 12px;
   text-align: center;
   color: #ffffff;
@@ -421,11 +425,19 @@ h3 {
 }
 
 .features p {
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   font-size: 15px;
   line-height: 22px;
-  font-weight: 300;
+  font-weight: medium;
   color: #283136;
+}
+
+.features h3 {
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: medium;
+  color: #000;
 }
 
 
@@ -537,19 +549,19 @@ h3 {
 
 .about-us-left p {
   display: block;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
+  font-weight: medium;
   color: #283136;
 }
 
 .about-us-left li {
   display: block;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
+  font-weight: medium;
   color: #283136;
   padding: 5px 0 5px 0;
 }
@@ -566,22 +578,30 @@ h3 {
   margin: 35px 0 20px 0;
 }
 
-.about-us-right .sinse {
-  display: block;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+.about-us-right h3 {
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
+  font-weight: medium;;
+  color: #283136;
+}
+
+.about-us-right .sinse {
+  display: block;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: medium;;
   color: #283136;
   padding: 60px 0 5px 30px;
   padding-bottom: 8px;
 }
 
 .about-us-right li {
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
+  font-weight: medium;
   color: #283136;
   padding: 5px 0 5px 0;
 }
@@ -590,6 +610,15 @@ h3 {
   position: relative;
   padding-left: 30px;
 }
+
+.about-us-left h3 {
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: medium;;
+  color: #283136;
+}
+
 
 .about-us-right li:before {
   position: absolute;
@@ -692,6 +721,14 @@ h3 {
 
 /*Ползунок стоимости*/
 
+.price span {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: medium;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+  color: #000;
+}
+
 .range-filter {
   width: 240px;
   margin: 50px auto;
@@ -756,9 +793,10 @@ h3 {
 }
 
 .price-controls input {
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   font-size: 16px;
   line-height: 22px;
+  font-weight: medium;
   width: 60px;
   margin-left: 10px;
   padding: 8px 10px;
@@ -773,6 +811,16 @@ h3 {
 
 /*Переключатель: Radio*/
 
+
+.grid span {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: medium;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+  color: #000;
+}
+
+
 input[type="radio"] {
   display: none;
 }
@@ -780,9 +828,10 @@ input[type="radio"] {
 input[type="radio"] + label {
   display: block;
   margin: 10px 0;
+  font-size: 16px;
   line-height: 20px;
   padding-left: 45px;
-  font-weight: 600;
+  font-weight: medium;
   color: #283136;
   position: relative;
   cursor: pointer;
@@ -819,6 +868,14 @@ input[type="radio"]:checked + label::before {
 
 /*Переключатель: Checkbox*/
 
+.more-function span {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: medium;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+  color: #000;
+}
+
 input[type="checkbox"] {
   display: none;
 }
@@ -829,7 +886,9 @@ input[type="checkbox"] + label {
   line-height: 20px;
   padding-left: 45px;
   position: relative;
-  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: medium;
   cursor: pointer;
 }
 
@@ -869,9 +928,10 @@ input[type="checkbox"]:checked + label::before {
   height: 35px;
   background-color: #f1f1f1;
   border-radius: 5px;
-  font-size: 14px;
-  font-weight: 500;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: medium;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   color: #000000;
   border: none;
   margin-top: 25px;
@@ -901,13 +961,13 @@ input[type="checkbox"]:checked + label::before {
   position: relative;
 }
 
-.sort-main h3 {
+.sort-main span {
   display: inline-block;
   margin-right: 40px;
   font-size: 12px;
   font-weight: 18px;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
-  font-weight: 500;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-weight: medium;
   color: #283136;
 }
 
@@ -916,13 +976,15 @@ input[type="checkbox"]:checked + label::before {
   margin-right: 40px;
   font-size: 12px;
   font-weight: 18px;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
-  font-weight: 500;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-weight: medium;
   color: #283136;
   opacity: 0.3;
   border-bottom: 1px dotted #00ca74;
   text-transform: uppercase;
 }
+
+
 
 .sort-main a:hover {
   opacity: 1;
@@ -936,14 +998,14 @@ input[type="checkbox"]:checked + label::before {
 
 .btn-descending span {
   position: absolute;
-  top: 23px;
-  right: 45px;
+  top: 4px;
+  right: 5px;
   display: inline-block;
-  font-size: 20px;
+  font-size: 23px;
   color: black;
   opacity: 0.3;
-  width: 8px;
-  height: 8px;
+  width: 15px;
+  height: 15px;
 }
 
 .btn-descending span:hover {
@@ -957,14 +1019,14 @@ input[type="checkbox"]:checked + label::before {
 
 .btn-ascending span {
   position: absolute;
-  top: 23px;
-  right: 25px;
+  top: 4px;
+  right: -10px;
   display: inline-block;
-  font-size: 20px;
+  font-size: 23px;
   color: black;
   opacity: 0.3;
-  width: 8px;
-  height: 8px;
+  width: 15px;
+  height: 15px;
 }
 
 .btn-ascending span:hover {
@@ -1032,7 +1094,7 @@ input[type="checkbox"]:checked + label::before {
   margin: 20px 0 5px 50px;
   font-size: 18px;
   line-height: 30px;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1045,8 +1107,9 @@ input[type="checkbox"]:checked + label::before {
   margin-left: 30px;
   font-size: 14px;
   line-height: 18px;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
-  color: #000000;
+  font-weight: medium;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+  color: #283136;
 }
 
 
@@ -1085,12 +1148,12 @@ input[type="checkbox"]:checked + label::before {
   color: #000;
   margin-bottom: 80px;
   margin-right: 16px;
-  padding: 15px 15px;
+  padding: 12px 18px;
   border-radius: 3px;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
-  font-size: 16px;
-  line-height: 12px;
-  font-weight: 500;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: medium;
 }
 
 .btn-pg:hover {
@@ -1116,7 +1179,7 @@ input[type="checkbox"]:checked + label::before {
   background-size: cover;
 }
 
-.map .conteiner {
+.map .container {
   position: relative;
 }
 
@@ -1133,20 +1196,21 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .feat-back h1 {
-  padding: 25px 0 5px 20px;
+  padding: 14px 0 5px 20px;
   font-size: 16px;
   line-height: 30px;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-weight: medium;
   color: #000000;
   text-transform: uppercase;
 }
 
 .adress {
-  padding: 5px 0 15px 20px;
+  padding: 5px 0 10px 20px;
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   color: #666;
   text-transform: uppercase;
 }
@@ -1154,9 +1218,9 @@ input[type="checkbox"]:checked + label::before {
 .phone {
   padding: 5px 0 15px 20px;
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   color: #666;
   text-transform: uppercase;
 }
@@ -1175,8 +1239,8 @@ input[type="checkbox"]:checked + label::before {
   border-radius: 3px;
   font-size: 12px;
   line-height: 40px;
-  font-weight: 500;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-weight: medium;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   text-align: center;
   vertical-align: top;
   text-decoration: none;
@@ -1199,7 +1263,7 @@ input[type="checkbox"]:checked + label::before {
   padding: 75px 0;
 }
 
-.footer .conteiner {
+.footer .container {
   display: flex;
   justify-content: space-between;
 }
@@ -1207,15 +1271,17 @@ input[type="checkbox"]:checked + label::before {
 .info p {
   font-size: 16px;
   line-height: 22px;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
-  color: #000;
+  font-weight: medium;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+  color: #283136;
 }
 
 .info .add-friends {
   padding-bottom: 10px;
   font-size: 36px;
   line-height: 36px;
-  font-family: 'Roboto', Arial, Verdana, sans-serif;
+  font-weight: medium;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
   color: #000;
 }
 
@@ -1304,7 +1370,7 @@ input[type="checkbox"]:checked + label::before {
 .feed-back-form input[type="text"],
 .feed-back-form input[type="email"],
 .feed-back-form textarea {
-  font-weight: 500;
+  font-weight: medium;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
@@ -1345,7 +1411,7 @@ input[type="checkbox"]:checked + label::before {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
+  font-weight: medium;
   display: inline-block;
   width: 224px;
   /*  outline: 1px solid green;*/
@@ -1359,6 +1425,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .message-field {
+  padding-left: 10px;
   width: 460px;
   margin-bottom: 50px;
 }

@@ -6,15 +6,16 @@
   <title>Nerds</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href="ccs/normalize.css" rel="stylesheet">
+  <link href="css/style.min.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="menu-header">
-    <div class="conteiner">
+    <div class="container">
       <!--Навигация: Логотип - он же ссыылка на главную страницу-->
       <div class="logo">
-        <a href="index.html"><img src="img/logo-header.png" width="139px" height="56px" alt="Дизайн Студия<Nёrd's>"></a>
+        <a href="index.html"><img src="img/logo-header.png" width="139" height="56" alt="Дизайн Студия<Nёrd's>"></a>
       </div>
       <!--Навигация: Главное меню-->
       <nav class="top-navigation">
@@ -36,13 +37,13 @@
     </div>
   </header>
   <main class="catalog-main-content">
-    <div class="conteiner cf">
+    <div class="container cf">
       <!-- Фильтр: сортировка продукции -->
       <aside class="filter">
         <form action="" method="">
           <!--Ползунок стоимости-->
           <section class="price">
-            <h3>Стоимость:</h3>
+            <span>Стоимость:</span>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -63,7 +64,7 @@
           </section>
           <!--Переключатель: Radio-->
           <section class="grid">
-            <h3>Сетка:</h3>
+            <span>Сетка:</span>
             <input type="radio" id="adaptive" name="grid" checked>
             <label for="adaptive">Адаптативная</label>
             <input type="radio" id="fixed" name="grid" disabled>
@@ -73,7 +74,7 @@
           </section>
           <!--Переключатель: Checkbox-->
           <section class="more-function">
-            <h3>Особенности:</h3>
+            <span>Особенности:</span>
             <input type="checkbox" id="slider" name="slider" checked>
             <label for="slider">Слайдер</label>
             <input type="checkbox" id="advantages" name="advantages">
@@ -92,7 +93,7 @@
       <article class="content-catalog">
         <!--Сортировка: кнопки для сортировки поиска продукции-->
         <section class="sort-main">
-          <h3>Сортировать:</h3>
+          <span>Сортировать:</span>
           <a href="#">
             <p class="by-price">по цене</p>
           </a>
@@ -212,7 +213,7 @@
   <!--КАРТА-->
   <article class="map">
     <!-- Кнопка обратной связи  -->
-    <div class="conteiner">
+    <div class="container">
       <div class="feat-back">
         <h1>nerds design studio</h1>
         <p class="adress">191186, Санкт-петербург,
@@ -225,7 +226,7 @@
   </article>
   <!--Подвал: Социальные сети    -->
   <footer class="footer">
-    <div class="conteiner cf">
+    <div class="container cf">
       <div class="social">
         <a class="social-btn" href="https://vk.com/"><span class="icon-vk"></span>ВКонтакте</a>
         <a class="social-btn" href="https://www.facebook.com/"><span class="icon-facebook"></span>Фейсбук</a>
@@ -245,8 +246,7 @@
       <input type="text" id="name" name="name" value="" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
       <input type="email" id="email" name="email" value="" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
       <label for="message">Текст письма:</label>
-      <textarea class="message-field" id="message" name="message" rows="5">
-      </textarea>
+      <textarea class="message-field" id="message" name="message" rows="5" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА"></textarea>
       <button class="btn form-btn" type="submit" value="Отправить">Отправить</button>
       <a class="cancel-btn"></a>
     </form>
@@ -283,6 +283,7 @@
     });
   </script>
   <script src="js/jquery.js"></script>
+  <script src="js/style.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
