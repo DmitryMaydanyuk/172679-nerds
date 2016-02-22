@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>Nerds</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href="ccs/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,7 +41,7 @@
         <form action="" method="">
           <!--Ползунок стоимости-->
           <section class="price">
-            <span>Стоимость:</span>
+            <h3>Стоимость:</h3>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -64,7 +62,7 @@
           </section>
           <!--Переключатель: Radio-->
           <section class="grid">
-            <span>Сетка:</span>
+            <h3>Сетка:</h3>
             <input type="radio" id="adaptive" name="grid" checked>
             <label for="adaptive">Адаптативная</label>
             <input type="radio" id="fixed" name="grid" disabled>
@@ -74,7 +72,7 @@
           </section>
           <!--Переключатель: Checkbox-->
           <section class="more-function">
-            <span>Особенности:</span>
+            <h3>Особенности:</h3>
             <input type="checkbox" id="slider" name="slider" checked>
             <label for="slider">Слайдер</label>
             <input type="checkbox" id="advantages" name="advantages">
@@ -202,10 +200,10 @@
         </article>
         <!--Кнопки переключения страниц магазина-->
         <section class="pagenator cf">
-          <a href="#" class="btn-pg btn-pg-active btn">1</a>
-          <a href="#" class="btn-pg btn">2</a>
-          <a href="#" class="btn-pg btn">3</a>
-          <a href="#" class="btn-pg btn">Следующая</a>
+          <a href="#" class="btn-pg btn-pg-active">1</a>
+          <a href="#" class="btn-pg">2</a>
+          <a href="#" class="btn-pg">3</a>
+          <a href="#" class="btn-pg">Следующая</a>
         </section>
       </article>
     </div>
@@ -246,44 +244,12 @@
       <input type="text" id="name" name="name" value="" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
       <input type="email" id="email" name="email" value="" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
       <label for="message">Текст письма:</label>
-      <textarea class="message-field" id="message" name="message" rows="5" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА"></textarea>
+      <textarea class="message-field" id="message" name="message" rows="5" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
       <button class="btn form-btn" type="submit" value="Отправить">Отправить</button>
       <a class="cancel-btn"></a>
     </form>
   </section>
-  <!--JS для формы обратной связи    -->
-  <script>
-    var link = document.querySelector(".send-us");
-    var popup = document.querySelector(".block-form");
-    var close = popup.querySelector(".cancel-btn");
-    var name = popup.querySelector("#name");
-    var form = popup.querySelector("form");
-
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      popup.classList.add("block-form-show");
-      name.focus();
-    });
-
-    close.addEventListener("click", function (event) {
-      event.preventDefault();
-      popup.classList.remove("block-form-show");
-
-    });
-
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-    });
-    window.addEventListener("keydown", function (event) {
-      if (event.keyCode === 27) {
-        if (popup.classList.contains("block-form-show")) {
-          popup.classList.remove("block-form-show");
-        }
-      }
-    });
-  </script>
   <script src="js/jquery.js"></script>
-  <script src="js/style.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
