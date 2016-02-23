@@ -33,7 +33,7 @@
 .icon-up-dir::before { content: "\25b2"; } /* "▲" */
 .icon-down-dir::before { content: "\25bc"; } /* "▼" */
 .icon-circle::before { content: "\25cb"; } /* "○" */
-.icon-circle-dot::before { content: "\25cf"; } /* "●" */
+.icon-circle-dot::before { content: "\25clearfix"; } /* "●" */
 .icon-check-off::before { content: "\2610"; } /* "☐" */
 .icon-check-on::before { content: "\2611"; } /* "☑" */
 .icon-instagramm::before { content: "📷"; } /* "\1f4f7" */

@@ -20,7 +20,7 @@ _`.editorconfig`, `.gitignore`, `Readme.md`._
 
 [Откройте репозиторий](https://github.com/htmlacademy-htmlcss/172679-nerds) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
 
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/12391938/5b3183f8-bdfc-11e5-888b-fa74dcf4d829.jpg">
+<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/12391938/5b3183f8-bdfc-11e5-888b-fa74dclearfix4d829.jpg">
 
 Получится вот так:
 

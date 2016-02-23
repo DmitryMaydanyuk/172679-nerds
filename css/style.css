@@ -1,4 +1,10 @@
 @font-face {
+  font-family: Roboto;
+  font-weight: 500;
+  src: url(../fonts/robotomedium.woff);
+}
+
+@font-face {
   font-weight: normal;
   font-style: normal;
   font-family: "symbols-nerds";
@@ -7,12 +13,13 @@
 
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
-  display: inline-block;
+  display: inline-block; 
+  vertical-align: top;
   width: 1em;
   margin-right: 0.2em;
   margin-left: 0.2em;
   font-weight: normal;
-  line-height: 1em;
+  line-height: -1em;
   font-family: "symbols-nerds";
   text-align: center;
   text-transform: none;
@@ -66,10 +73,14 @@
   content: "📷";
 }
 
-.cf {
-  content: "";
-  display: table;
-  clear: both;
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
 }
 
 ul {
@@ -142,9 +153,18 @@ h3 {
 }
 
 .menu-header .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 40px;
 }
 
@@ -177,7 +197,8 @@ h3 {
 }
 
 .top-navigation a {
-  display: inline-block;
+  display: inline-block; 
+  vertical-align: top;
   padding-bottom: 5px;
   color: #000000;
   font-size: 14px;
@@ -196,8 +217,8 @@ h3 {
 }
 
 .top-navigation li {
-  display: inline-block;
-  margin-right: 40px;
+  display: inline-block; vertical-align: top;
+  margin-right: 45px;
   vertical-align: top;
 }
 
@@ -219,6 +240,7 @@ h3 {
 
 .basket {
   position: relative;
+  padding-left: 25px;
   display: inline-block;
   vertical-align: top;
   padding-bottom: 5px;
@@ -228,6 +250,13 @@ h3 {
   font-weight: medium;
   font-family: "Roboto", Arial,  sans-serif;
   text-transform: uppercase;
+}
+
+.icon-basket {
+  position: relative;
+  top: 4px;
+  left: -6px;
+  opacity: 0.3;
 }
 
 .user-block a:hover {
@@ -274,7 +303,6 @@ h3 {
   background-repeat: no-repeat;
   background-position: 100% 10px;
   -webkit-transition: left 0.3s ease;
-  -moz-transition: left 0.3s ease;
   transition: left 0.3s ease;
 }
 
@@ -306,7 +334,7 @@ h3 {
 }
 
 .slide-text {
-  width: 500px;
+  width: 470px;
 }
 
 .slide-title h2 {
@@ -351,7 +379,7 @@ h3 {
 }
 
 .slide:nth-child(1) {
-  background-image: url("../img/slider-img-1.png");
+  background-image: url("../img/komp.png");
 }
 
 .slide:nth-child(2) {
@@ -443,6 +471,9 @@ h3 {
 
 .shop-now1 {
   display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  line-height: 40px;
   width: 130px;
   min-height: 40px;
   margin-top: 30px;
@@ -472,6 +503,9 @@ h3 {
 
 .shop-now2 {
   display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  line-height: 40px;
   width: 130px;
   min-height: 40px;
   margin-top: 30px;
@@ -500,6 +534,9 @@ h3 {
 
 .shop-now3 {
   display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: top;
   width: 130px;
   min-height: 40px;
   margin-top: 30px;
@@ -649,6 +686,7 @@ h3 {
   top: 60px;
   left: 50px;
   display: inline-block;
+  vertical-align: top;
   width: 300px;
 }
 
@@ -754,7 +792,7 @@ h3 {
   border: 8px solid #fff;
   border-radius: 50%;
   background: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0;
 }
 
 .range-controls .toggle-min {
@@ -772,6 +810,7 @@ h3 {
 .price-controls label {
   font-size: 16px;
   display: inline-block;
+  vertical-align: top;
   width: 50%;
 }
 
@@ -953,7 +992,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .sort-main span {
-  display: inline-block;
+  display: inline-block; vertical-align: top;
   margin-right: 40px;
   font-size: 12px;
   font-weight: 18px;
@@ -965,6 +1004,7 @@ input[type="checkbox"]:checked + label::before {
 
 .sort-main a {
   display: inline-block;
+  vertical-align: top;
   margin-right: 40px;
   font-size: 12px;
   font-weight: 18px;
@@ -992,7 +1032,8 @@ input[type="checkbox"]:checked + label::before {
   position: absolute;
   top: 4px;
   right: 5px;
-  display: inline-block;
+  display: inline-block; 
+  vertical-align: top;
   font-size: 23px;
   color: black;
   opacity: 0.3;
@@ -1014,6 +1055,7 @@ input[type="checkbox"]:checked + label::before {
   top: 4px;
   right: -10px;
   display: inline-block;
+  vertical-align: top;
   font-size: 23px;
   color: black;
   opacity: 0.3;
@@ -1027,7 +1069,7 @@ input[type="checkbox"]:checked + label::before {
 
 .btn-ascending span:active {
   opacity: 1;
-  color: color: #00ca74;
+  color: #00ca74;
 }
 
 
@@ -1058,6 +1100,7 @@ input[type="checkbox"]:checked + label::before {
 .hole {
   /*стилизация элементов товара*/
   display: inline-block;
+  vertical-align: middle;
   width: 9px;
   height: 9px;
   background-color: #fff;
@@ -1092,7 +1135,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .item-hover p {
-  display: inline-block;
+  display: inline-block; vertical-align: top;
   width: 160px;
   height: 40px;
   padding: 5px 5px;
@@ -1110,6 +1153,7 @@ input[type="checkbox"]:checked + label::before {
 .buy {
   margin: 20px 15px 15px 30px;
   display: inline-block;
+  vertical-align: top;
   width: 140px;
   min-height: 40px;
   background-color: #fb565a;
@@ -1166,7 +1210,7 @@ input[type="checkbox"]:checked + label::before {
 
 .map {
   width: 100%;
-  background: url("../img/map.jpg") no-repeat;
+  background: #e9e5dc url("../img/map.jpg") no-repeat;
   min-height: 415px;
   margin-bottom: 10px;
   background-size: cover;
@@ -1174,6 +1218,10 @@ input[type="checkbox"]:checked + label::before {
 
 .map .container {
   position: relative;
+}
+
+.map iframe {
+  width: 100%;
 }
 
 
@@ -1201,6 +1249,7 @@ input[type="checkbox"]:checked + label::before {
 .adress {
   padding: 5px 0 10px 20px;
   display: inline-block;
+  vertical-align: top;
   font-size: 16px;
   line-height: 20px;
   font-family: "Roboto", Arial,  sans-serif;
@@ -1211,6 +1260,7 @@ input[type="checkbox"]:checked + label::before {
 .phone {
   padding: 5px 0 15px 20px;
   display: inline-block;
+  vertical-align: top;
   font-size: 16px;
   line-height: 20px;
   font-family: "Roboto", Arial,  sans-serif;
@@ -1257,8 +1307,18 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .footer .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info {
+  width: 550px;
 }
 
 .info p {
@@ -1278,26 +1338,46 @@ input[type="checkbox"]:checked + label::before {
   color: #000;
 }
 
+.social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .social-btn {
-  display: inline-block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   position: relative;
-  text-align: center;
   width: 62px;
   height: 63px;
   background-color: #fb565a;
   font-size: 0;
   border-radius: 50%;
-  vertical-align: top;
   margin-right: 30px;
+  line-height: 63px;
   color: #fff;
   opacity: 0.3;
 }
 
 .social-btn span {
   font-size: 28px;
-  line-height: 63px;
   color: #fff;
   text-align: center;
+  margin: auto;
 }
 
 .social a:hover {
@@ -1330,16 +1410,20 @@ input[type="checkbox"]:checked + label::before {
 
 @keyframes login-open {
   0% {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   70% {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   90% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -1355,7 +1439,7 @@ input[type="checkbox"]:checked + label::before {
 .feed-back-form {
   position: relative;
   font-size: 0;
-  padding: 70px 90px 50px 80px;
+  padding: 70px 80px 50px 80px;
   background-color: #fff;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, .75);
 }
@@ -1389,6 +1473,7 @@ input[type="checkbox"]:checked + label::before {
 .feed-back-form input[type="text"],
 .feed-back-form input[type="email"] {
   display: inline-block;
+  vertical-align: top;
   width: 209px;
   height: 37px;
   padding-left: 10px;
@@ -1406,6 +1491,7 @@ input[type="checkbox"]:checked + label::before {
   line-height: 18px;
   font-weight: medium;
   display: inline-block;
+  vertical-align: top;
   width: 224px;
   /*  outline: 1px solid green;*/
   margin-right: 20px;
@@ -1419,8 +1505,9 @@ input[type="checkbox"]:checked + label::before {
 
 .message-field {
   padding-left: 10px;
-  width: 460px;
+  width: 453px;
   margin-bottom: 50px;
+  padding-top: 10px;
 }
 
 .form-btn {
@@ -1481,32 +1568,3 @@ input[type="checkbox"]:checked + label::before {
   color: #000;
 }
 
-
-/*
-@keyframes shake {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
-  }
-  20%, 40%, 60%, 80% {
-    transform: translateX(10px);
-  }
-}
-*/
-
-
-/*
-.login-popup-error {
-    -webkit-animation: login-error 0.6s;
-    animation: login-error 0.6s;
-}
-*/
-
-
-/*
-.modal-error {
-  animation: shake 0.6s;
-}
-*/
