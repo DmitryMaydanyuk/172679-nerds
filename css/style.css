@@ -98,7 +98,7 @@ img {
 
 body {
   position: relative;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: medium;
@@ -109,7 +109,7 @@ body {
 
 
 h2 {
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: medium;
@@ -117,7 +117,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: medium;
@@ -183,7 +183,7 @@ h3 {
   font-size: 14px;
   line-height: 30px;
   font-weight: medium;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   text-transform: uppercase;
 }
 
@@ -226,7 +226,7 @@ h3 {
   font-size: 14px;
   line-height: 30px;
   font-weight: medium;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   text-transform: uppercase;
 }
 
@@ -246,7 +246,7 @@ h3 {
   padding: 30px 150px 90px 150px;
   margin-left: 35px;
   margin-bottom: 68px;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-size: 40px;
   line-height: 40px;
   font-weight: medium;
@@ -307,11 +307,10 @@ h3 {
 
 .slide-text {
   width: 500px;
-/*  padding: 10px 0 40px 0;*/
 }
 
 .slide-title h2 {
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: medium;
@@ -321,7 +320,7 @@ h3 {
 }
 
 .slide p {
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: medium;
@@ -332,7 +331,6 @@ h3 {
 .slide .btn {
   display: block;
   width: 220px;
-/*  margin-top: 55px;*/
   padding: 12px 10px;
   font-weight: medium;
   font-size: 12px;
@@ -415,7 +413,7 @@ h3 {
 }
 
 .features p {
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-size: 15px;
   line-height: 22px;
   font-weight: medium;
@@ -423,7 +421,7 @@ h3 {
 }
 
 .features h3 {
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: medium;
@@ -542,7 +540,7 @@ h3 {
 
 .about-us-left p {
   display: block;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: medium;
@@ -551,7 +549,7 @@ h3 {
 
 .about-us-left li {
   display: block;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: medium;
@@ -572,7 +570,7 @@ h3 {
 }
 
 .about-us-right h3 {
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: medium;;
@@ -581,7 +579,7 @@ h3 {
 
 .about-us-right .sinse {
   display: block;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: medium;;
@@ -591,7 +589,7 @@ h3 {
 }
 
 .about-us-right li {
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: medium;
@@ -605,7 +603,7 @@ h3 {
 }
 
 .about-us-left h3 {
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: medium;;
@@ -782,7 +780,7 @@ h3 {
 }
 
 .price-controls input {
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: medium;
@@ -808,7 +806,7 @@ h3 {
   font-size: 18px;
   line-height: 30px;
   font-weight: medium;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   color: #000;
   text-transform: uppercase;
   padding-bottom: 20px;
@@ -923,7 +921,7 @@ input[type="checkbox"]:checked + label::before {
   font-size: 12px;
   line-height: 18px;
   font-weight: medium;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   color: #000000;
   border: none;
   margin-top: 25px;
@@ -959,7 +957,7 @@ input[type="checkbox"]:checked + label::before {
   margin-right: 40px;
   font-size: 12px;
   font-weight: 18px;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-weight: medium;
   text-transform: uppercase;
   color: #283136;
@@ -970,7 +968,7 @@ input[type="checkbox"]:checked + label::before {
   margin-right: 40px;
   font-size: 12px;
   font-weight: 18px;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-weight: medium;
   color: #283136;
   opacity: 0.3;
@@ -1088,7 +1086,7 @@ input[type="checkbox"]:checked + label::before {
   margin: 20px 0 5px 50px;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1102,7 +1100,7 @@ input[type="checkbox"]:checked + label::before {
   font-size: 14px;
   line-height: 18px;
   font-weight: medium;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   color: #283136;
 }
 
@@ -1144,7 +1142,7 @@ input[type="checkbox"]:checked + label::before {
   margin-right: 16px;
   padding: 12px 18px;
   border-radius: 3px;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-size: 12px;
   line-height: 18px;
   font-weight: medium;
@@ -1194,7 +1192,7 @@ input[type="checkbox"]:checked + label::before {
   padding: 14px 0 5px 20px;
   font-size: 16px;
   line-height: 30px;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   font-weight: medium;
   color: #000000;
   text-transform: uppercase;
@@ -1205,7 +1203,7 @@ input[type="checkbox"]:checked + label::before {
   display: inline-block;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   color: #666;
   text-transform: uppercase;
 }
@@ -1215,7 +1213,7 @@ input[type="checkbox"]:checked + label::before {
   display: inline-block;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   color: #666;
   text-transform: uppercase;
 }
@@ -1235,7 +1233,7 @@ input[type="checkbox"]:checked + label::before {
   font-size: 12px;
   line-height: 40px;
   font-weight: medium;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   text-align: center;
   vertical-align: top;
   text-decoration: none;
@@ -1267,7 +1265,7 @@ input[type="checkbox"]:checked + label::before {
   font-size: 16px;
   line-height: 22px;
   font-weight: medium;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   color: #283136;
 }
 
@@ -1276,7 +1274,7 @@ input[type="checkbox"]:checked + label::before {
   font-size: 36px;
   line-height: 36px;
   font-weight: medium;
-  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
   color: #000;
 }
 
